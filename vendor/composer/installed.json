@@ -510,6 +510,53 @@
             "install-path": "../doctrine/reflection"
         },
         {
+            "name": "drupal/car_zymphonies_theme",
+            "version": "2.0.2",
+            "version_normalized": "2.0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/car_zymphonies_theme.git",
+                "reference": "2.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/car_zymphonies_theme-2.0.2.zip",
+                "reference": "2.0.2",
+                "shasum": "1e64d50a0b7c9af980f0ee6d224cee66f4f3393c"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.2",
+                    "datestamp": "1605867801",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "zymphonies-team",
+                    "homepage": "https://www.drupal.org/user/2280310"
+                }
+            ],
+            "description": "Designed & Developed by <a href=http://www.zymphonies.com>Zymphonies</a><br/>Contact us for any kind of Drupal services <a href=mailto:info@zymphonies.com>info@zymphonies.com</a>",
+            "homepage": "https://www.drupal.org/project/car_zymphonies_theme",
+            "support": {
+                "source": "https://git.drupalcode.org/project/car_zymphonies_theme"
+            },
+            "install-path": "../../web/themes/contrib/car_zymphonies_theme"
+        },
+        {
             "name": "drupal/core",
             "version": "9.1.0",
             "version_normalized": "9.1.0.0",
