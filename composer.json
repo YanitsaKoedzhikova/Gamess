@@ -19,7 +19,13 @@
         "drupal/car_zymphonies_theme": "^2.0",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
-        "drupal/core-recommended": "^9.1"
+        "drupal/core-recommended": "^9.1",
+        "drupal/drupal8_zymphonies_theme": "^2.0",
+        "drupal/freelancer_zymphonies_theme": "^2.0",
+        "drupal/paragraphs": "^1.12",
+        "drupal/vani": "^1.2",
+        "drupal/yg_property_one": "^2.0",
+        "drupal/zuvi": "^1.5"
     },
     "conflict": {
         "drupal/drupal": "*"

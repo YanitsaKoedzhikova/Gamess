@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '0c09673bb5fc4c3649a751b3d523f9f1d6aa2dd9',
+    'reference' => '6acb2adbdf0a66433e70c1948edb3cda00853acb',
     'name' => 'drupal/recommended-project',
   ),
   'versions' => 
@@ -483,6 +483,15 @@ private static $installed = array (
         0 => '9.1.0',
       ),
     ),
+    'drupal/drupal8_zymphonies_theme' => 
+    array (
+      'pretty_version' => '2.0.2',
+      'version' => '2.0.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2.0.2',
+    ),
     'drupal/dynamic_page_cache' => 
     array (
       'replaced' => 
@@ -503,6 +512,15 @@ private static $installed = array (
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/entity_reference_revisions' => 
+    array (
+      'pretty_version' => '1.8.0',
+      'version' => '1.8.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.8',
     ),
     'drupal/field' => 
     array (
@@ -545,6 +563,15 @@ private static $installed = array (
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/freelancer_zymphonies_theme' => 
+    array (
+      'pretty_version' => '2.0.2',
+      'version' => '2.0.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2.0.2',
     ),
     'drupal/hal' => 
     array (
@@ -721,6 +748,15 @@ private static $installed = array (
         0 => '9.1.0',
       ),
     ),
+    'drupal/paragraphs' => 
+    array (
+      'pretty_version' => '1.12.0',
+      'version' => '1.12.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.12',
+    ),
     'drupal/path' => 
     array (
       'replaced' => 
@@ -756,7 +792,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '0c09673bb5fc4c3649a751b3d523f9f1d6aa2dd9',
+      'reference' => '6acb2adbdf0a66433e70c1948edb3cda00853acb',
     ),
     'drupal/responsive_image' => 
     array (
@@ -898,6 +934,15 @@ private static $installed = array (
         0 => '9.1.0',
       ),
     ),
+    'drupal/vani' => 
+    array (
+      'pretty_version' => '1.2.0',
+      'version' => '1.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.2',
+    ),
     'drupal/views' => 
     array (
       'replaced' => 
@@ -925,6 +970,24 @@ private static $installed = array (
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/yg_property_one' => 
+    array (
+      'pretty_version' => '2.0.0',
+      'version' => '2.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2.0.0',
+    ),
+    'drupal/zuvi' => 
+    array (
+      'pretty_version' => '1.5.0',
+      'version' => '1.5.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.5',
     ),
     'egulias/email-validator' => 
     array (
