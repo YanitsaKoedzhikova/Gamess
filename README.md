@@ -70,8 +70,3 @@ II.Paragraphs types are:
 		-User;
 	
   VIII.Custom module:
-				
-				
-		
-			
-    
