@@ -40,8 +40,8 @@ II.Paragraphs types are:
 				-Tags;
 			-Basic page:
 				-Body;
-				
-	IV.Contents are:
+        
+  IV.Contents are:
 			-Games:
 				-League of Legends;
 				-Warcraft;
@@ -55,21 +55,21 @@ II.Paragraphs types are:
 			-Basic page:
 				-About us;
 				
-	V.WebForm:
+  V.WebForm:
 		-Did u like our game site ?:
 				-Name ( First, Last);
 				-Yes (Checkbox);
 				-Opinion;
-				
-	VI.Themes:
+	
+  VI.Themes:
 		-Car Zymphonies Theme 2.0.2 (default theme);
-		
-	VII.Search pages:
+	
+  VII.Search pages:
 		-Site;
 		-Content;
 		-User;
-		
-	VIII.Custom module:
+	
+  VIII.Custom module:
 				
 				
 		
