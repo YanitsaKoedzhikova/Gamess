@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'f8315b445b468ab5087e44d2cbf21ceb696f8145',
+    'reference' => '6b4116a5dbc0f0faccf6cdd5a90015b85755cc41',
     'name' => 'drupal/recommended-project',
   ),
   'versions' => 
@@ -462,6 +462,15 @@ private static $installed = array (
         0 => '9.1.0',
       ),
     ),
+    'drupal/date_popup' => 
+    array (
+      'pretty_version' => '1.1.0',
+      'version' => '1.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.1',
+    ),
     'drupal/datetime' => 
     array (
       'replaced' => 
@@ -657,6 +666,15 @@ private static $installed = array (
         0 => '9.1.0',
       ),
     ),
+    'drupal/mailsystem' => 
+    array (
+      'pretty_version' => '4.3.0',
+      'version' => '4.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-4.3',
+    ),
     'drupal/media' => 
     array (
       'replaced' => 
@@ -792,7 +810,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'f8315b445b468ab5087e44d2cbf21ceb696f8145',
+      'reference' => '6b4116a5dbc0f0faccf6cdd5a90015b85755cc41',
     ),
     'drupal/responsive_image' => 
     array (
@@ -1233,6 +1251,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'a4faaa6f532c6086bc66c29e1bc6c29593e1ca7c',
+    ),
+    'swiftmailer/swiftmailer' => 
+    array (
+      'pretty_version' => 'v6.2.4',
+      'version' => '6.2.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '56f0ab23f54c4ccbb0d5dcc67ff8552e0c98d59e',
     ),
     'symfony-cmf/routing' => 
     array (
