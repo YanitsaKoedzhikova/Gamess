@@ -44,4 +44,5 @@ CMS - Games System
     XI.Exposed filters:
         -Games page: Games Name, Year Of Releas;
         -Developers page: Developer name;
+        -Genre page: Genre Name;
     
