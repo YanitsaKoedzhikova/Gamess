@@ -1,0 +1,44 @@
+<?php
+
+function my_module_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+    if($form_id == 'comment_comment_form'){
+        $form['actions']['submit']['#value'] = t('Comment');
+    }
+}
+function my_module_preprocess_webform_confirmation(&$vars) {
+  if ($vars['webform']->id() == 'site_form') {
+    $request = \Drupal::request()->query;
+    $display_mode = $request->get('display_mode');
+    $rate_type = $request->get('rate_type');
+    if ($rate_type === 'complete' && $display_mode === 'overlay') {
+      $markup = t('Thank you for sharing with us your opinions about our website!') . '<br/><br/>';
+      $markup .= '<button class="overlay-only">';
+      $markup .= t('Explore more of this game site');
+      $markup .= '</button>';
+      $vars['message']['#allowed_tags'] = ['br', 'button'];
+    }
+    else {
+      $markup = t('Thank you for sharing with us your opinions about our website!');
+    }
+
+    $vars['message']['#markup'] = $markup;
+  }
+}
+
+function my_module_proc_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'site_form') {
+    $node = \Drupal::entityTypeManager()->getStorage('node')->load(17);
+    $current_user = \Drupal::currentUser();
+    //$user_id = \Drupal::currentUser()->id();
+    //$user_entity = \Drupal::entityTypeManager()->getStorage('user')->load($user_id);
+    $user_mail = $current_user->getEmail();
+    $form['submitted']['user_mail']['#default_value'] = $node->email;
+    if(user_is_logged_in()){
+      {
+        $form['submitted']['email']['#default_value']= 'anynomous@abv.bg';
+
+      }
+    }
+  }
+}
+
