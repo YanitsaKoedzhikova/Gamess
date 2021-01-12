@@ -34,7 +34,8 @@ CMS - Games System
     VI.Themes: Car Zymphonies Theme 2.0.2 (default theme);
     
     VIII.Custom module:
-    
+        -My Project Module;
+        
     IX. RSS feed: It have rss feed for games and developers.
     
     X.Block view:
