@@ -25,20 +25,28 @@ function my_module_preprocess_webform_confirmation(&$vars) {
   }
 }
 
-function my_module_proc_form_alter(&$form, &$form_state, $form_id) {
-  if ($form_id == 'site_form') {
-    $node = \Drupal::entityTypeManager()->getStorage('node')->load(17);
-    $current_user = \Drupal::currentUser();
-    //$user_id = \Drupal::currentUser()->id();
-    //$user_entity = \Drupal::entityTypeManager()->getStorage('user')->load($user_id);
-    $user_mail = $current_user->getEmail();
-    $form['submitted']['user_mail']['#default_value'] = $node->email;
-    if(user_is_logged_in()){
-      {
-        $form['submitted']['email']['#default_value']= 'anynomous@abv.bg';
 
-      }
+// hook_form_FORM_ID_alter()
+//hook_webform_handler_invoke_pre_create_alter
+//hook_webform_handler_invoke_pre_save_alter
+
+//function my_module_webform_handler_invoke_pre_create_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+function my_module_form_site_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+//function my_module_webform_handler_invoke_pre_save_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'site_form') {
+    //if ($form('#webform_id') == 'site_form') {
+    $current_user = \Drupal::currentUser();
+    $user_email = $current_user->getEmail();
+    //die(dump($user_email));
+    // var_dump($user_email);
+    // die();
+     $form['submitted']['email']['#default_value'] = $user_email;
+   // $form['submitted']['field_email']['#default_value'] = $user_email;
+    if(!$current_user->isAnonymous()) {
+      //$form['submitted']['field_email']['#default_value']= t('anynomous@abv.bg');
+      // $form['submitted']['field_email']['#default_value']= 'anynomous@abv.bg';
+      //$form['submitted']['email']['#default_value']= 'anynomous@abv.bg';
+      $form['submitted']['email']['#default_value']= t('anynomous@abv.bg');
     }
   }
 }
-
